@@ -30,6 +30,7 @@ rule step for state in roommates {
       if bananas == 0 {
         if (notePresent) {
           // Roommate at store: try again later
+          var allHungry: Boolean;
           allHungry=True;
           for roommate in roommates{
              if(roommate !=Hungry){
